@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: whitesmoke;
+  background-color: hsl(344.83deg 36.1% 47.25% / 0%);
+  text-shadow: 1px 1px 1.5px #000000;
+}
+/* typography */
+.btn, .submit {
+    font-weight:600;
+}
+.icon {
+    text-align: left;
+}
+.thank-img {
+    text-align: center;
+}
+/* layout */
+.rating {
+  width: 350px;
+  height: 312px;
+  border-radius: 15px;
+  background: linear-gradient(
+    hsl(337.12deg 62.14% 74.06%),
+    hsl(19.01deg 26.28% 81.7%)
+  );
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+.icon {
+  padding: 17px 0px;
+}
+.icon img {
+  padding: 10px;
+}
+.rating-text {
+  margin: 8px 0px;
+}
+.icon img, .btn {
+    background-color: hsl(346, 47%, 79%);
+    border-radius: 50%;
+}
+/* Rating buttons */
+.btn, .submit {
+    cursor: pointer;
+}
+.rating-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+    border:1px solid #a44d63;
+  margin: 7px;
+  padding: 10px 15px;
+}
+.btn:hover, .submit {
+  background-color: #a44d63;
+  color: whitesmoke;
+}
+.btn:focus {
+  background-color: whitesmoke;
+  color: #a44d63;
+}
+
+.submit {
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 8px;
+  width: 90%;
+  border-radius: 25px;
+  border:none;
+  text-transform: uppercase;
+  transition: all 2s;
+}
+
+.submit:hover,.submit:focus {
+  background-color: rgb(69, 24, 35);
+}
+
+/* thank you feedback */
+.selected-rating{
+    background: hsl(2.14deg 29.79% 81.57% / 38%);
+    color:#a44d63;
+    border-radius: 25px;
+    width: fit-content;
+    padding: 3px 25px;
+    margin: 10px auto;
+    border:2px solid #a44d63;
+    text-shadow: none;
+}
+
+.thank-img img {
+    display:inline-block;
+    margin-top:20px;
+}
